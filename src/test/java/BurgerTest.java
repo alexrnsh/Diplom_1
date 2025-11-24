@@ -107,14 +107,12 @@ public class BurgerTest {
         burger.addIngredient(sauceIngredient);
 
         String receipt = burger.getReceipt();
-        System.out.println("[" + receipt + "]");
 
         String expected =
                 "(==== black bun ====)\n" +
                         "= sauce hot sauce =\n" +
                         "(==== black bun ====)\n\n" +
                         "Price: 250,000000\n";
-        System.out.println("[" + expected + "]");
 
         assertEquals(
                 expected.replace("\r", "").trim(),
